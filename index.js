@@ -520,6 +520,7 @@ let Newstudents = ["Ravi", "Seema", "Aman"];
  Newstudents.forEach((item, i) => {
   console.log(` hello ${item}!`);
 });
+
 // forEach() ➤ har element ke liye ek baar callback function run karega.
   // item ➤ ye current student ka naam hai.
   // i ➤ ye uska index hai (0, 1, 2).
