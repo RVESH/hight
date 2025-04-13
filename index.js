@@ -524,3 +524,79 @@ let Newstudents = ["Ravi", "Seema", "Aman"];
 // forEach() ➤ har element ke liye ek baar callback function run karega.
   // item ➤ ye current student ka naam hai.
   // i ➤ ye uska index hai (0, 1, 2).
+
+
+  const users = [
+    { name: "Ravi", active: true },
+    { name: "Seema", active: false },
+    { name: "Kabir", active: true }
+  ];
+
+  const activeUsers = users.filter(user => user.active);
+
+  console.log(activeUsers);
+
+  const products = [
+    { id: 1, name: "Phone", price: 30000 },
+    { id: 2, name: "Laptop", price: 60000 },
+    { id: 3, name: "Tablet", price: 20000 },
+  ];
+
+  // Find the first product with price > 25000
+let product2 = products.filter(pro => pro.price > 25000 );
+console.log(product2);
+
+
+
+const students1 = [
+  { name: "Ravi", marks: 89 },
+  { name: "Seema", marks: 95 },
+  { name: "Kabir", marks: 67 },
+];
+
+// 🟡 Find the first student who scored more than 90 marks
+let scored = students1.find(learn => learn.marks > 90  );
+console.log(scored);
+
+
+const users1 = [
+  { name: "Ravi", age: 17 },
+  { name: "Seema", age: 19 },
+  { name: "Aman", age: 16 }
+];
+
+// Find the first user whose age is 18 or above
+let scored1 = users1.find(puchi => puchi.age >= 18);
+console.log(scored1);
+
+
+const products3 = [
+  { name: "Phone", price: 30000 },
+  { name: "Laptop", price: 70000 },
+  { name: "Tablet", price: 20000 }
+];
+
+// 🧠 Find the first product whose price is above 25000
+let scored3 = products3.filter(puchi => puchi.price > 25000);
+console.log(scored3);
+
+
+
+let movies = [
+  { title: "Avengers", rating: 8.5 },
+  { title: "Batman", rating: 7.2 },
+  { title: "Superman", rating: 6.9 },
+  { title: "Ironman", rating: 9.0 }
+];
+let movies1 = movies.filter(watch => watch.rating >= 8.5 );
+console.log(movies1);
+
+
+
+let books = [
+  { title: "JS Basics", published: true },
+  { title: "React Guide", published: false },
+  { title: "Node Mastery", published: true },
+];
+let iSavailable = books.filter(book => book.published);
+console.log(iSavailable);
