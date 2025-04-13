@@ -600,3 +600,62 @@ let books = [
 ];
 let iSavailable = books.filter(book => book.published);
 console.log(iSavailable);
+
+
+let products4 = [
+  { name: "Phone", price: 30000 },
+  { name: "Laptop", price: 70000 },
+  { name: "Headphones", price: 5000 }
+];
+
+// ✅ Task 1: Ek naya array banao jisme price ke sath "₹" sign ho
+// ✅ Task 2: Sirf product names ka ek array banao
+let order3 = products4.map(product3 => `${product3.price }₹ - ${product3.name}`);
+console.log(order3);
+// let order4 = products4.map(product3 => product3.name);
+// console.log(order4);
+
+let userss = [
+  { name: "Ravi", age: 22, role: "Admin" },
+  { name: "Seema", age: 19, role: "User" },
+  { name: "Kabir", age: 25, role: "Moderator" }
+];
+let user4 = userss.map(user3 => `${user3.name}  (${user3.age})  ${user3.role}`);
+console.log(user4);
+
+let cartItems = [
+  { name: "Phone", price: 30000, quantity: 2 },
+  { name: "Shoes", price: 2500, quantity: 3 },
+  { name: "Watch", price: 1500, quantity: 1 }
+];
+
+// 👇 Task: Ek naya array banao jisme har product ka name aur uska total price ho (price * quantity)
+let finalCart = cartItems.map(item => {
+  return `${item.name} - ₹${item.price * item.quantity}`;
+});
+
+console.log(finalCart);
+
+let users4 = [
+  { name: "Ravi", avatar: "ravi.jpg" },
+  { name: "Seema", avatar: "seema.jpg" },
+  { name: "Aman", avatar: "aman.jpg" }
+];
+
+// 👇 Task: Ek array banao jisme har element HTML ke image tag jaisa string ho
+let profileImages = users4.map(user => `<img src="${user.avatar}" alt="${user.name}" />`);
+console.log(profileImages);
+
+
+let user5 = [
+  { firstName: "Ravi", lastName: "Kumar", age: 22 },
+  { firstName: "Seema", lastName: "Sharma", age: 17 },
+  { firstName: "Kabir", lastName: "Verma", age: 25 },
+];
+let users5 = user5
+.filter(useing => useing )
+.map(useing =>{
+return  `displayName:${useing.firstName} ${useing.lastName}, canVote:${useing.age.filter() >17}`;
+
+});
+console.log(users5);
