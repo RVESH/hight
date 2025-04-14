@@ -652,9 +652,33 @@ let user5 = [
   { firstName: "Seema", lastName: "Sharma", age: 17 },
   { firstName: "Kabir", lastName: "Verma", age: 25 },
 ];
-let users5 = user5
-.filter(useing => useing )
-.map(useing =>{
-return  `displayName:${useing.firstName} ${useing.lastName}, canVote:${useing.age.filter() >17}`;
+let users5 = user5.map(useing =>{return  `displayName:${useing.firstName} ${useing.lastName},canVote:${useing.age > 17}`;
 });
 console.log(users5);
+
+// let products5 = [
+//   { name: "Phone", price: 20000 },
+//   { name: "Laptop", price: 70000 },
+//   { name: "Headphones", price: 3000 }
+// ];
+//
+// let rrr = products5.forEach(product6 => product6.name);
+//   console.log(rrr); // sirf log karega
+// undefined prient karega
+// ❓ Kyun?
+// forEach() kuch return nahi karta, iska kaam sirf har element par koi action perform karna hota hai — but woh value return nahi karta.
+
+let products5 = [
+  { name: "Phone", price: 20000 },
+  { name: "Laptop", price: 70000 },
+  { name: "Headphones", price: 3000 }
+];
+let total = 0;
+products5.forEach(product5 => {
+  total += product5.price;
+});
+console.log("Total Price: ₹", total);
+
+products5.forEach(product5 => {
+  console.log(product5.name); // sirf log karega
+});
