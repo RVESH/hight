@@ -656,6 +656,5 @@ let users5 = user5
 .filter(useing => useing )
 .map(useing =>{
 return  `displayName:${useing.firstName} ${useing.lastName}, canVote:${useing.age.filter() >17}`;
-
 });
 console.log(users5);
